@@ -11,7 +11,7 @@ class PagesController extends Controller
     public function home(){
         $people = ['Bill', 'Heather', 'Liz'];
 
-        return view('welcome', compact('people'));
+        return view('pages.welcome', compact('people'));
     }
 
     public function about()
