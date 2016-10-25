@@ -66,8 +66,13 @@
     </head>
     <body>
         <h1>People</h1>
-        <?php foreach($people as $person) { ?>
-            <li><?= $person; ?></li>
-        <?php } ?>
+
+        @if(empty($people))
+            There are no people
+        @endif
+
+        @foreach($people as $person)
+            <li>{{ $person }}</li>
+        @endforeach
     </body>
 </html>
