@@ -4,7 +4,7 @@
 
     @foreach($cards as $card)
         <div>
-            {{$card.title}}
+            {{$card->title}}
         </div>
     @endforeach
 @stop

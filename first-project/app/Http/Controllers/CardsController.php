@@ -10,6 +10,6 @@ class CardsController extends Controller
     public function index()
     {
         $cards = DB::table('cards')->get();
-        return view('cards.index', compact($cards));
+        return view('cards.index', compact('cards'));
     }
 }
