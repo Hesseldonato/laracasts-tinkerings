@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
 </head>
 <body>
-    @yield('content')
+    <body class="container">
+        @yield('content')
+    </body>
 </body>
 </html>
