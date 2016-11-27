@@ -10,9 +10,8 @@ class NotesController extends Controller
 {
     public function store(Request $request, Card $card)
     {
-        $card->addNote(
-            new Note( $request->all() )
-        );
+        $note = new Note( $request->all() );
+        $card->addNote($note, 1);
 
         return back();
     }
