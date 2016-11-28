@@ -19,6 +19,9 @@ sites:
     - map: note-cards.app
       to: "/home/vagrant/laracasts-tinkerings/note-cards-project/public"
 
+    - map: auth.app
+      to: "/home/vagrant/laracasts-tinkerings/auth-project/public"
+
 databases:
     - homestead
 
