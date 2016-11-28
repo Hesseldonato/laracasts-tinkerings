@@ -2,8 +2,8 @@
 ip: "192.168.10.10"
 memory: 2048
 cpus: 1
-hostname: auth-project
-name: auth-project
+hostname: laracasts-tinkerings
+name: laracasts-tinkerings
 provider: virtualbox
 
 authorize: ~/.ssh/id_rsa.pub
@@ -12,12 +12,12 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: "/home/billy/projects/laracasts-tinkerings/auth-project"
-      to: "/home/vagrant/auth-project"
+    - map: "/home/billy/projects/laracasts-tinkerings"
+      to: "/home/vagrant/laracasts-tinkerings"
 
 sites:
-    - map: homestead.app
-      to: "/home/vagrant/auth-project/public"
+    - map: note-cards.app
+      to: "/home/vagrant/laracasts-tinkerings/note-cards-project/public"
 
 databases:
     - homestead

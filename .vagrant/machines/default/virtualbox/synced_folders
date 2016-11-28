@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/laracasts-tinkerings":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/laracasts-tinkerings","hostpath":"/home/billy/projects/laracasts-tinkerings","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/billy/projects/laracasts-tinkerings","disabled":false,"__vagrantfile":true}}}
