@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use App\User;
 
 class MustBeAdministrator
 {
@@ -17,7 +18,7 @@ class MustBeAdministrator
     {
         $user = $request->user();
 
-        if($user && $user->username == 'Admin') {
+        if($user && $user->isAdmin()) {
             return $next($request);
         }
 
