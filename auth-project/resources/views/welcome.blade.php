@@ -68,11 +68,7 @@
         </style>
     </head>
     <body>
-        @if(Session::has('flash_message'))
-            <div class="alert alert-{{ Session::get('flash_message_level') }}">
-                <strong>{{ Session::get('flash_message') }}</strong>
-            </div>
-        @endif
+    @include('flash')
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
