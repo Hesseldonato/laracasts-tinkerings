@@ -10,6 +10,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+
         <!-- Styles -->
         <style>
             html, body {
@@ -65,6 +68,11 @@
         </style>
     </head>
     <body>
+        @if(Session::has('flash_message'))
+            <div class="alert alert-{{ Session::get('flash_message_level') }}">
+                <strong>{{ Session::get('flash_message') }}</strong>
+            </div>
+        @endif
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">

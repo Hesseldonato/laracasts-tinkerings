@@ -11,6 +11,11 @@
 |
 */
 
+Route::get('/begin', function () {
+    flash('You are logged in.', 'success');
+    return redirect('/');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
