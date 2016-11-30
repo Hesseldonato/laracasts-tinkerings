@@ -13,9 +13,10 @@ Follow-along apps from Laravel 5 screencasts on [laracasts.com](https://laracast
   - http://auth.app - User authentication app which covers:
     - user authentication
     - session flashing
-    - Defining global helper files
+    - global helper files definition
     - middleware
     - singletons and factories using Laravel's built-in "service container"
+    - service providers and registering them
 
 - [Laravel 5 Fundamentals](https://laracasts.com/series/laravel-5-fundamentals)
 - [What's New in Laravel 5.1](https://laracasts.com/series/whats-new-in-laravel-5-1)
