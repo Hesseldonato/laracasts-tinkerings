@@ -60,6 +60,11 @@ Route::get('/', function () {
     $user_registrar = App::singleton('user_registrar_singleton');
     var_dump($user_registrar); echo "<br><br>";
 
+    echo 'Finally, if you type hint the function it is used in, Laravel automatically resolves it based on either App bindings, or auto class resolution: ';
+    var_dump(function(UserRegistrar $user_registrar_type_hinted){
+        return $user_registrar_type_hinted;
+    });
+
     return view('welcome');
 });
 
