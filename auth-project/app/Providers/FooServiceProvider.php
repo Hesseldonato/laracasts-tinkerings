@@ -13,7 +13,7 @@ class FooServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        var_dump('THEN: FooServiceProvider booting..');
     }
 
     /**
@@ -23,6 +23,7 @@ class FooServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        dd('is this working?');
+        var_dump('FooServiceProvider registering..');
+        var_dump('All other service providers will then register..');
     }
 }
