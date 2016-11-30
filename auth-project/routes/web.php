@@ -16,8 +16,7 @@ Route::get('/begin', function () {
     return redirect('/');
 });
 
-Route::get('/', function () {
-
+Route::get('/factory-singleton-examples', function () {
     /**
      * Messy dependency injection example, of multiple dependencies having to be dealt with during instantiation
      */
@@ -64,7 +63,9 @@ Route::get('/', function () {
     var_dump(function(UserRegistrar $user_registrar_type_hinted){
         return $user_registrar_type_hinted;
     });
+});
 
+Route::get('/', function () {
     return view('welcome');
 });
 

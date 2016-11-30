@@ -68,7 +68,8 @@
         </style>
     </head>
     <body>
-    @include('flash')
+        @include('flash')
+        <a href="/factory-singleton-examples"><strong>See factory & singleton examples</strong></a>  using Laravel's service containers.
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
