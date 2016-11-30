@@ -1,5 +1,5 @@
 
-Follow-along apps from Laravel 5 screencasts on laracasts.com:
+Follow-along apps from Laravel 5 screencasts on [laracasts.com](https://laracasts.com/):
 
 - [Laravel 5 From Scratch](https://laracasts.com/series/laravel-5-from-scratch/)
 
