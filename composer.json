@@ -1,5 +1,6 @@
 {
     "require": {
+        "laravel/homestead": "^3.0"
     },
     "require-dev": {
         "laravel/homestead": "^3.0"
